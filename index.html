@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0c0c10">
-  <meta name="description" content="Página personal de nosk: videojuegos, pixel art y proyectos.">
-
-  <title>nosk. | Página personal</title>
+  <meta name="description" content="Página personal de Nosk_hk: videojuegos, pixel art y proyectos.">
+  <title>Nosk_hk | Página personal</title>
 
   <style>
     :root {
@@ -65,7 +64,8 @@
       letter-spacing: -1.5px;
     }
 
-    .logo span {
+    .logo span,
+    h1 span {
       color: var(--purple);
     }
 
@@ -101,13 +101,9 @@
 
     h1 {
       margin: 14px 0;
-      font-size: clamp(54px, 9vw, 88px);
+      font-size: clamp(48px, 9vw, 88px);
       letter-spacing: -5px;
       line-height: 1.08;
-    }
-
-    h1 span {
-      color: var(--purple);
     }
 
     .hero p {
@@ -168,8 +164,7 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 10px;
-      transition: transform .2s, border-color .2s,
-                  background .2s;
+      transition: transform .2s, border-color .2s, background .2s;
     }
 
     .card:hover {
@@ -189,6 +184,19 @@
       color: var(--purple);
       font-family: Consolas, monospace;
       font-size: 38px;
+    }
+
+    .pixel-art {
+      display: block;
+      width: 100%;
+      height: 180px;
+      padding: 10px;
+      object-fit: contain;
+      image-rendering: pixelated;
+      background:
+        radial-gradient(ellipse at center, #9575db20, transparent 70%),
+        #111116;
+      border-bottom: 1px solid var(--border);
     }
 
     .card-body {
@@ -254,7 +262,6 @@
       font-size: 12px;
     }
 
-    /* Cursor decorativo, sin ocultar el cursor normal */
     #cursor {
       position: fixed;
       z-index: 20;
@@ -317,6 +324,10 @@
         gap: 12px;
       }
 
+      .pixel-art {
+        height: 145px;
+      }
+
       .card-art {
         min-height: 110px;
       }
@@ -352,7 +363,7 @@
 
   <header>
     <div class="container navbar">
-      <a class="logo" href="#inicio">nosk<span>.</span></a>
+      <a class="logo" href="#inicio">Nosk_hk<span>.</span></a>
 
       <nav aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
@@ -367,7 +378,7 @@
     <div class="container">
       <section class="hero" id="inicio">
         <span class="overline">Página personal</span>
-        <h1>Hola, soy <span>nosk.</span></h1>
+        <h1>Hola, soy <span>Nosk_hk.</span></h1>
         <p>
           Videojuegos indie, pixel art y programación.
           Un espacio para mis intereses y proyectos.
@@ -420,18 +431,28 @@
 
         <div class="grid">
           <article class="card">
-            <div class="card-art" aria-hidden="true">✳</div>
+            <img
+              class="pixel-art"
+              src="isaac%20twins%20in%20carrousel.gif"
+              alt="Animación de Isaac Twins"
+              loading="lazy"
+            >
             <div class="card-body">
-              <h3>Personajes</h3>
-              <p>Diseños y bocetos.</p>
+              <h3>Isaac Twins</h3>
+              <p>Pixel art animado.</p>
             </div>
           </article>
 
           <article class="card">
-            <div class="card-art" aria-hidden="true">▧</div>
+            <img
+              class="pixel-art"
+              src="luna.png"
+              alt="Pixel art de Luna"
+              loading="lazy"
+            >
             <div class="card-body">
-              <h3>Escenarios</h3>
-              <p>Ambientes y paisajes.</p>
+              <h3>Luna</h3>
+              <p>Pixel art.</p>
             </div>
           </article>
 
@@ -455,11 +476,13 @@
               programación y crear mis propios proyectos.
             </p>
 
-            <!-- Cambia TU-USUARIO por tu usuario de GitHub -->
-            <a class="github-link"
-               href="https://github.com/nosk-dev"
-               target="_blank"
-               rel="noopener noreferrer">
+            <!-- Cambia TU-USUARIO por tu usuario real de GitHub -->
+            <a
+              class="github-link"
+              href="https://github.com/nosk-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Mi GitHub ↗
             </a>
           </div>
@@ -470,7 +493,7 @@
 
   <footer>
     <div class="container footer-content">
-      <span>© <span id="year"></span> nosk.</span>
+      <span>© <span id="year"></span> Nosk_hk.</span>
       <a href="#inicio">Volver arriba ↑</a>
     </div>
   </footer>
@@ -490,3 +513,4 @@
   </script>
 </body>
 </html>
+
